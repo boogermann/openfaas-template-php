@@ -7,9 +7,9 @@ Open FAAS templates for PHP 5.6 and latest stable version of PHP 7
 
 faas-cli add-template https://github.com/gaiterjones/openfaas-template-php
 
-faas-cli new php5function --lang php5
+faas-cli new php7function --lang php
 
-faas-cli new php7function --lang php7
+faas-cli new php5function --lang php5
 
 faas-cli build -f phpxfunction.yml
 
