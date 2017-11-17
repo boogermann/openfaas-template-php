@@ -1,10 +1,9 @@
-# PHP templates for openfaas
+# PHP templates for OpenFaaS
 
 ## Versions
-Open FAAS templates for PHP 5.6 and latest stable version of PHP 7
+Open FAAS templates for PHP 5.6 and latest stable version of PHP 7 based on itscaro/openfaas-template-php
 
 ## Usage:
-
 faas-cli add-template https://github.com/gaiterjones/openfaas-template-php
 
 faas-cli new php7function --lang php
@@ -17,11 +16,13 @@ faas-cli deploy -f  phpxfunction.yml
 
 faas-cli invoke -f phpxfunction.yml myfunction or curl 127.0.0.1:8080/function/phpxfunction -d 'hello world'
 
+
 PHP Version : 5.6.32
+
 Data : hello world
 
 
-To customise -> `php5function` - `php7function`:
+To customise function in -> `php5function` - `php7function`:
 
 - Handler.php::handle() : entrypoint
 - php-extension.sh : is for installing PHP extensions if needed
