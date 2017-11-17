@@ -2,8 +2,9 @@
 
 class Handler
 {
-    public function handle(string $data)
+    public function handle($_data)
     {
-        echo $data;
+        $_version = phpversion();
+        echo 'PHP Version : '. $_version ."\n". 'Data : '. $_data. "\n\n";
     }
 }
