@@ -20,8 +20,8 @@ RUN set -x \
     && chown -R docker /usr/local/faas
 
 # install composer
-USER docker
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+USER docker
 RUN composer install --no-dev
 
 # install function
